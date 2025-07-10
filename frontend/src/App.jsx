@@ -5,7 +5,8 @@ import Roompage from "./pages/Room/index.jsx";
 import io from "socket.io-client";
 import { useEffect } from "react";
 
-const server = "http://localhost:5000";
+const server = "https://collabwb-backend.onrender.com";
+
 const connectionOption = {
   "force new connection": true,
   reconnectionAttempt: "infinite",

@@ -8,7 +8,10 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(cors({
-  origin: "http://localhost:5173", // frontend origin only for development
+  origin: [
+    "http://localhost:5173", // for local dev
+    "https://your-vercel-app.vercel.app" // deployed frontend
+  ],
   methods: ["GET", "POST"],
   credentials: true,
 }));
